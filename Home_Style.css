@@ -12,6 +12,9 @@
     align-items: center;
     padding: 20px 80px;
     background-color:aquamarine ;
+    z-index: 999;
+    position: sticky;
+    top :0;
 }
 .Header a{
     text-decoration: none;
@@ -25,9 +28,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: aqua;
-    z-index: 999;
+    /* z-index: 999;
     position: sticky;
-    top: 0;
+    top: 0; */
 }
 .Navbar li{
     display: inline;
