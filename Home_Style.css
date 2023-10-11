@@ -84,16 +84,21 @@ ul.list-menu  li img{
   width: 25px;
   height: 25px;
 }
-
+.list-menu a{
+    text-decoration: none;
+    color: black;
+}
 
 /*--------------------------------------NAVBAR---------------------------------------*/
 
 
 
 .container{
-  padding: 30px 30px;
-  width: 1150px;
-  border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+    width: 100%;
+    border: 1px solid black;
 }
 
 .page-title{
@@ -143,3 +148,5 @@ ul.list-menu  li img{
   align-items: center;
   margin-left: 33%;
 }
+
+/*--------------------------------------SLIDER---------------------------------------*/
