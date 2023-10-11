@@ -96,18 +96,23 @@ ul.list-menu  li img{
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 30px 30px;
     width: 100%;
-    border: 1px solid transparent;
+    border: 1px solid black;
 }
 
 .gambar_slide1{
     display: none;
 }
 .wrapper{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     max-width: 1000px;
     position: relative;
     margin: auto;
+   
 }
 .prev, .next {
     cursor: pointer;
@@ -131,45 +136,74 @@ ul.list-menu  li img{
     background-color: #f1f1f1;
     color: black;
   }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
 .gambar_slide1 img{
-    max-height :479px ;
+    max-height :479px;
+    width: 100%;
     vertical-align: middle;
-}
-
-.category-title{
-  display: flex;
-  align-items: center;
-  margin-left: 35%;
-  margin-bottom: 20px;
-}
-
-.product-card-container{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.product-card{
-  background-color: #B0D9B1;
-  border-radius: 14px;
-  width: 150px;
-  padding: 10px 10px;
-}
-
-.product-card img{
-  width: 130px;
-  border-radius: 8px;
-}
-
-.product-card p:last-child{
-  margin-top: 20px;
-}
-
-.lihat-semua{
-  display: flex;
-  align-items: center;
-  margin-left: 33%;
+    border-radius: 20px;
 }
 
 /*--------------------------------------SLIDER---------------------------------------*/
 
+.page-title{
+    margin-left: 45%;
+    margin-bottom: 30px;
+  }
+  
+  .product-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  
+  .category-title{
+    display: flex;
+    align-items: center;
+    margin-left: 35%;
+    margin-bottom: 20px;
+  }
+  
+  .product-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .product-card{
+    background-color: #B0D9B1;
+    border-radius: 14px;
+    width: 150px;
+    padding: 10px 10px;
+  }
+  
+  .product-card img{
+    width: 130px;
+    border-radius: 8px;
+  }
+  
+  .product-card p:last-child{
+    margin-top: 20px;
+  }
+  
+  .lihat-semua{
+    display: flex;
+    align-items: center;
+    margin-left: 33%;
+  }
+  
