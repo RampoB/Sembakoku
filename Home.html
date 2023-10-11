@@ -31,7 +31,7 @@
     <nav class="nav2">
   
       <ul class="list-menu">
-        <li><img src="Images/home.png"><a href="#">Home</a></li>
+        <li><img src="Images/home.png"><a href="Home.html">Home</a></li>
         <li><img src="Images/promo.png"><a href="">Promo</a></li>
         <li><img src="Images/tentang.png"><a href="">Tentang</a></li>
         <li><img src="Images/lokasi.png"><a href="">Lokasi</a></li>
@@ -44,15 +44,47 @@
   
     <!-- Content Atas -->
     <div class="container">
-      
+      <div class="wrapper">
+
+       <div class="gambar_slide1">
+        <img src="Images/chili-peppers-449_1280.jpg">
+       </div>
+
+       <div class="gambar_slide1">
+        <img src="Images/grains-651404_1280.jpg">
+       </div>
+
+       <div class="gambar_slide1">
+        <img src="Images/garlic-3747176_1280.jpg">
+       </div>
+
+       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+      </div>
     </div>
     <!-- Content Tengah -->
-    <div class="container">
-      
-    </div>
-    <!-- Footer -->
-    <div class="container">
-      
-    </div>
+
 </body>
+<script>
+    let slideIndex = [1];
+    let slideId = ["gambar_slide1"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+    x[slideIndex[no]-1].style.display = "block";  
+    }
+</script>
 </html>
