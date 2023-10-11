@@ -31,51 +31,60 @@
     <nav class="nav2">
   
       <ul class="list-menu">
-        <li><img src="Images/home.png"><p>Home</p></li>
-        <li><img src="Images/promo.png"><p>Promo</p></li>
-        <li><img src="Images/tentang.png"><p>Tentang</p></li>
-        <li><img src="Images/lokasi.png"><p>Lokasi</p></li>
-        <li><img src="Images/keranjang.png"><p>keranjang</p></li>
-        <li><img src="Images/favorit.png"><p>Favorit</p></li>
-        <li><img src="Images/pembayaran.png"><p>Pembayaran</p></li>
+        <li><img src="Images/home.png"><a href="Home.html">Home</a></li>
+        <li><img src="Images/promo.png"><a href="">Promo</a></li>
+        <li><img src="Images/tentang.png"><a href="">Tentang</a></li>
+        <li><img src="Images/lokasi.png"><a href="">Lokasi</a></li>
+        <li><img src="Images/keranjang.png"><a href="">Keranjang</a></li>
+        <li><img src="Images/favorit.png"><a href=""></a>Favorit</li>
+        <li><img src="Images/pembayaran.png"><a href="">Pembayaran</a></li>
       </ul>
   
     </nav>
   
+    <!-- Content Atas -->
     <div class="container">
-      <h3 class="page-title">Semua Produk</h3>
-  
-      <div class="product-container">
-        <div class="category-title">
-          <img src="Images/ayam.png">
-          <p>Ayam</p>
-        </div>
-  
-        <div class="product-card-container">
-          <div class="product-card">
-            <img src="Images/anonym-img.png">
-            <p>Jual produk</p>
-            <p>Rp 25.000</p>
-  
-            <p>nama toko</p>
-          </div>
-  
-          <div class="product-card">
-            <img src="Images/anonym-img.png">
-            <p>Jual produk</p>
-            <p>Rp 25.000</p>
-  
-            <p>nama toko</p>
-          </div>
-        </div>
-  
-        <div class="lihat-semua">
-          <p>Lihat Semua</p>
-          <img src="Images/lihat-semua.png" alt="">
-        </div>
+      <div class="wrapper">
+
+       <div class="gambar_slide1">
+        <img src="Images/chili-peppers-449_1280.jpg">
+       </div>
+
+       <div class="gambar_slide1">
+        <img src="Images/grains-651404_1280.jpg">
+       </div>
+
+       <div class="gambar_slide1">
+        <img src="Images/garlic-3747176_1280.jpg">
+       </div>
+
+       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
       </div>
-  
     </div>
-    
+    <!-- Content Tengah -->
+
 </body>
+<script>
+    let slideIndex = [1];
+    let slideId = ["gambar_slide1"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+    x[slideIndex[no]-1].style.display = "block";  
+    }
+</script>
 </html>
