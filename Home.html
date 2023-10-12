@@ -12,96 +12,111 @@
     
 </head>
 <body>
-    <div class="whole_home_Page">
-        <header class="Header">
-            <a href="#" class="Logo">lOGO</a>
-            <div class="Box">
-                <Input type="search" placeholder="Search" name="Cari"></Input>
-            </div>
-            <a href="#" class="akun">Akun</a>
-        </header>
-        <!-- End Header -->
-        <!-- Start Navbar -->
-        <nav class="Navbar">
-            <ul>
-                <li><a href="#">Kategori</a></li>
-                <li><a href="#">Promo</a></li>
-                <li><a href="#">Lokasi Toko</a></li>
-                <li><a href="#">Keranjang</a></li>
-                <li><a href="#">Favorit</a></li>
-                <li><a href="#">Pembayaran</a></li>
-            </ul>
-        </nav>
-        <!-- End NavBar-->
-        <!-- Start Content -->
-        <section class="Hero">
-            <h1>Masya Allah</h1>
+    <nav class="nav1">
+        <div class="logo">
+          <h3>Sembakoku</h3>
+        </div>
+  
+        <div class="search-bar">
+          <input type="text" placeholder="Cari bahan">
+          <img src="images/search.png">
+        </div>
+  
+        <div class="daftar-masuk-btn">
+          <input type="button" value="Daftar">
+          <input type="button" value="Masuk">
+        </div>
+    </nav>
+  
+    <nav class="nav2">
+  
+      <ul class="list-menu">
+        <li><img src="Images/home.png"><a href="Home.html">Home</a></li>
+        <li><img src="Images/promo.png"><a href="">Promo</a></li>
+        <li><img src="Images/tentang.png"><a href="">Tentang</a></li>
+        <li><img src="Images/lokasi.png"><a href="">Lokasi</a></li>
+        <li><img src="Images/keranjang.png"><a href="Keranjang.html">Keranjang</a></li>
+        <li><img src="Images/favorit.png"><a href="">Favorit</a></li>
+        <li><img src="Images/pembayaran.png"><a href="">Pembayaran</a></li>
+      </ul>
+  
+    </nav>
+  
+    <!-- Content Atas -->
+    <div class="container">
+      <div class="wrapper">
+        
+       <div class="gambar_slide1 fade">
+        <img src="Images/chili-peppers-449_1280.jpg">
+       </div>
 
-            <!-- Untuk Wadah Gambar -->
-            <div class="container">
-                <!-- Untuk meringkas Gambar -->
-                <div class="wrapper">
-                    <!-- Pindah Gambar -->
-                    <div class="slider">
-                        <div class="Konten">
-                            <span>Just test it out</span>
-                            <h3>Telur</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Corrupti atque quibusdam voluptatibus rem animi doloremque sapiente?
-                                Provident doloremque ratione fugiat non. Ratione, iure. 
-                                Eius tempore dolorum repellat veritatis assumenda aliquam!</p>
-                        </div>
-                        <div class="Gambar">
-                            <img src="Images/egg-7345934_1280.jpg" alt="Telur">
-                        </div>
+       <div class="gambar_slide1 fade">
+        <img src="Images/grains-651404_1280.jpg">
+       </div>
 
-                        <div class="slider">
-                            <div class="Konten">
-                                <span>Just test it out</span>
-                                <h3>Terong</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Corrupti atque quibusdam voluptatibus rem animi doloremque sapiente?
-                                    Provident doloremque ratione fugiat non. Ratione, iure. 
-                                    Eius tempore dolorum repellat veritatis assumenda aliquam!</p>
-                            </div>
-                            <div class="Gambar">
-                                <img src="Images/eggplant-73906_1280.jpg" alt="Telur">
-                            </div>
+       <div class="gambar_slide1 fade">
+        <img src="Images/garlic-3747176_1280.jpg">
+       </div>
 
-                            <div class="slider">
-                                <div class="Konten">
-                                    <span>Just test it out</span>
-                                    <h3>Cabai</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        Corrupti atque quibusdam voluptatibus rem animi doloremque sapiente?
-                                        Provident doloremque ratione fugiat non. Ratione, iure. 
-                                        Eius tempore dolorum repellat veritatis assumenda aliquam!</p>
-                                </div>
-                                <div class="Gambar">
-                                    <img src="Images/chili-peppers-449_1280.jpg" alt="Telur">
-                                </div>
+       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 
-                                <div class="slider">
-                                    <div class="Konten">
-                                        <span>Just test it out</span>
-                                        <h3>Beras</h3>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            Corrupti atque quibusdam voluptatibus rem animi doloremque sapiente?
-                                            Provident doloremque ratione fugiat non. Ratione, iure. 
-                                            Eius tempore dolorum repellat veritatis assumenda aliquam!</p>
-                                    </div>
-                                    <div class="Gambar">
-                                        <img src="Images/grains-651404_1280.jpg" alt="Telur">
-                                    </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+      </div>
     </div>
-    
+
+    <!-- Content Tengah -->
+    <div class="container">
+        <h3 class="page-title">Semua Produk</h3>
+
+        <div class="product-container">
+         <div class="category-title">
+            <img src="images/ayam.png">
+            <p>Ayam</p>
+        </div>
+
+        <div class="product-card-container">
+            <div class="product-card">
+                <img src="images/anonym-img.png">
+                <p>Jual produk</p>
+                <p>Rp 25.000</p>
+                <p>nama toko</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/anonym-img.png">
+                <p>Jual produk</p>
+                <p>Rp 25.000</p>
+                <p>nama toko</p>
+            </div>
+      </div>
+
+      <div class="lihat-semua">
+        <p>Lihat Semua</p>
+        <img src="images/lihat-semua.png" alt="">
+      </div>
+    </div>
+    </div>
 </body>
+<script>
+    let slideIndex = [1];
+    let slideId = ["gambar_slide1"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+    x[slideIndex[no]-1].style.display = "block";  
+    setTimeout(showSlides, 2000);
+    }
+</script>
 </html>
