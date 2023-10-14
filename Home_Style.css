@@ -100,9 +100,10 @@ ul.list-menu  li img{
 
 
 .container{
-
     padding: 30px 30px;
     max-width:100%;
+    margin-left:100px;
+    margin-right:100px;
 }
 
 .gambar_slide1{
@@ -165,16 +166,20 @@ ul.list-menu  li img{
   
 
   .page-title{
-    margin-left: 45%;
+    text-align:center;
+    /* margin-left: 45%; */
     margin-bottom: 30px;
   }
   
   .product-category-container{
     display: grid;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: auto auto auto;
     /* grid-template-rows: 390px 390px 390px; */
-    justify-content: space-between;
-    row-gap: 10px;
+    margin-left:2px;
+    margin-bottom:20px;
+    justify-content:space-between;
+    /* margin-right:100px; */
+    row-gap: 1px;
   }
   
   .category-container{
@@ -194,6 +199,7 @@ ul.list-menu  li img{
   
   .product-card-container{
     display: flex;
+    flex-basis:21%;
     justify-content: space-between;
     margin-bottom: 20px;
   }
