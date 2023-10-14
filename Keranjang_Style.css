@@ -8,11 +8,11 @@
 /* Navigasi Bar */
 .nav1{
   height: 70px;
+  background-color:white;
+  display: flex;
   z-index:999;
   position:sticky;
-  background-color:white;
-  top:-1;
-  display: flex;
+  top:-1px;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
@@ -94,19 +94,27 @@ ul.list-menu  li img{
 }
 
 
-/* Keranjang Saya */
+/* ----------------------Keranjang-Saya--------------------- */
+
+.container-judul{
+  margin:20px 30px 0 30px;
+  padding:10px 10px 0 30px;
+  border-bottom:3px solid gray;
+}
 .container-grid{
   display:grid;
   grid-template-columns:auto auto;
   gap:20px;
-  padding:20px;
+  padding:10px;
   width:100%;
-  border:1px solid black;
+  /* border:1px solid black; */
 }
 
 /* Cart items */
 .small-page{
   margin:20px 20px 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius:15px;
 }
 .kolom1{
   grid-column:1/2;
@@ -122,7 +130,8 @@ table{
 }
 th{
   text-align:left;
-  padding:5px;
+  padding:10px;
+  margin-left:10px;
   /* color:#fff; */
   border-bottom:1px solid black;
 }
@@ -141,7 +150,64 @@ td a{
   color:red;
 }
 td img{
-  width:90px;
+  width:100px;
   margin-right:60px;
+  margin-left:10px;
   border-radius:15px;
+}
+
+
+/* ----------------------Rekomendasi Produk--------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------Footer--------------------- */
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  background-color: #63CE6D;
+}
+
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content h4{
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer-content p{
+  margin-bottom: 20px;
+}
+
+.sembakoku-socmed{
+  align-items: flex-end;
+  width: 100px;
+}
+
+.sembakoku-socmed img{
+  width: 45px;
+  height: 40px;
+}
+
+.category-footer{
+  display: flex;
+}
+
+.category2{
+  margin-left: 20px;
 }
