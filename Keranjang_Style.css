@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.whole_body{
+  width:100%;
+}
 /* Navigasi Bar */
 .nav1{
   height: 70px;
@@ -97,8 +100,11 @@ ul.list-menu  li img{
 /* ----------------------Keranjang-Saya--------------------- */
 
 .container-judul{
-  margin:20px 30px 0 30px;
-  padding:10px 10px 0 30px;
+  margin:20px 30px 0 80px;
+  padding:10px 10px 0 20px;
+  font-size:24px;
+  width:700px;
+  text-align:left;
   border-bottom:3px solid gray;
 }
 .container-grid{
@@ -158,9 +164,38 @@ td img{
 
 
 /* ----------------------Rekomendasi Produk--------------------- */
+.container-rekomendasi{
+  margin:20px 20px 1px 20px ;
+  padding:10px;
+  display:flex;
+  /* border:1px solid black; */
+}
 
+.container-card{
+  display:flex;
+  margin-top:0;
+  margin-bottom:10px;
+  margin-left:20px;
+  margin-right:auto;
+  grid-template-columns:auto;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:26px;
+  width:100%;
+}
 
-
+.product-card{
+  background-color: #B0D9B1;
+  border-radius: 14px;
+  padding: 10px 10px;
+  text-align:center;
+  width:180px;
+}
+.product-card p{
+  margin:auto auto;
+  text-align:left;
+}
 
 
 
@@ -168,6 +203,7 @@ td img{
 
 /* ----------------------Footer--------------------- */
 footer{
+  margin-top:15px;
   display: flex;
   justify-content: space-between;
   padding: 30px 30px;
