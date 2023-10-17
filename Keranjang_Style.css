@@ -162,6 +162,9 @@ td img{
   border-radius:15px;
 }
 
+aside th{
+  text-align:center;
+}
 
 /* ----------------------Rekomendasi Produk--------------------- */
 .container-rekomendasi{
