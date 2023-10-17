@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav1{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.search-bar img{
+  width: 20px;
+}
+
+.search-bar input{
+  width: 100%;
+  background: #FFFFFF;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}
+
+.logout-profile-container{
+  display: flex;
+  gap: 20px;
+}
+
+.logout-profile-container button{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+}
+
+.logout-profile-container img{
+  width: 35px;
+  height: 25px;
+}
+
+.nav2{
+  height: 70px;
+  padding: 12px 100px;
+  background-color: #63CE6D;
+}
+
+.list-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.list-menu  li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.list-menu  li img{
+  width: 25px;
+  height: 25px;
+}
+
+
+/*--------------------------------------CONTAINER & PRODUCT CONTAINER---------------------------------------*/
+
+
+.container{
+  padding: 30px 0;
+}
+
+.page-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.category-and-product-container{
+  display: flex;
+}
+
+.category-container{
+  flex-basis: 20%;
+}
+
+.category-list{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.category-list h4{
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px;
+  background-color: #B0D9B1;
+  
+}
+
+ul.category-list  li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 15px 45px;
+}
+
+ul.category-list  li:hover{
+  background-color: rgb(201, 196, 196);
+}
+
+ul.category-list  li img{
+  height: 45px;
+  width: 45px;
+  margin-right: 40px;
+}
+
+ul.category-list  li p{
+  font-size: 17px;
+}
+
+.product-container{
+  flex-basis: 80%;
+  padding: 0 30px;
+}
+
+#product-filter{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+#product-filter label{
+  margin-right: 10px;
+}
+
+#product-filter select{
+  padding: 0 5px;
+}
+
+.product-promo-container{
+  display: grid;
+  justify-content: space-between;
+  row-gap: 20px;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-template-rows: 230px 230px 230px 230px;
+}
+
+.product-card{
+  background-color: #B0D9B1;
+  border-radius: 14px;
+  width: 150px;
+  height: 230px;
+  padding: 10px 10px;
+}
+
+.product-card img{
+  width: 130px;
+  height: 95px;
+  border-radius: 8px;
+}
+
+.seller-name{
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.rating{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 20px;
+}
+
+.rating img{
+  width: 20px;
+  height: 20px;
+}
+
+.rating p{
+  font-size: 12px;
+}
+
+.next-slide-number{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+ul.next-slide-number li{
+  list-style: none;
+  width: 25px;
+}
+
+ul.next-slide-number li:first-child{
+  border-radius: 50%;
+  background-color: black;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+ul.next-slide-number li:last-child{
+  border-radius: 50%;
+  background-color: black;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.bantuan-btn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bantuan-btn button{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background-color: #14A2B8;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.bantuan-btn button img{
+  width: 25px;
+  height: 25px;
+}
+
+/*--------------------------------------FOOTER--------------------------------------*/
+
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  background-color: #63CE6D;
+}
+
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content h4{
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer-content p{
+  margin-bottom: 20px;
+}
+
+.sembakoku-socmed{
+  align-items: flex-end;
+  width: 100px;
+}
+
+.sembakoku-socmed img{
+  width: 45px;
+  height: 40px;
+}
+
+.category-footer{
+  display: flex;
+}
+
+.category2{
+  margin-left: 20px;
+}
