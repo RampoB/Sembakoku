@@ -61,6 +61,7 @@
 }
 
 .nav2{
+  width:100%;
   height: 70px;
   padding: 12px 100px;
   background-color: #63CE6D;
@@ -78,13 +79,13 @@ ul.list-menu  li{
   align-items: center;
 }
 
-ul.list-menu  li a{
-  text-decoration: none;
-}
-
 ul.list-menu  li img{
   width: 25px;
   height: 25px;
+}
+.list-menu a{
+    text-decoration: none;
+    color: black;
 }
 
 
