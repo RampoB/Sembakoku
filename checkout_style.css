@@ -109,13 +109,15 @@ ul.list-menu  li img{
 }
 .container-grid{
     display:flex;
-    border:1px solid black;
+    /* border:1px solid black; */
+    margin-bottom:10px;
+    padding-bottom:70px;
 }
 
 .wadah-kecil{
   margin:20px 20px 20px 30px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border-radius:15px;
+  border:1px solid black;
+  border-radius:0px;
   flex-basis:900px;
 }
 table{
@@ -183,13 +185,17 @@ td{
 /* ------------------------Kolom Checkout Ringkasan Belanja------------------------ */
 .wadah-sedang{
   /* border:1px solid black; */
-  margin:20px;
+  margin:10px;
   flex-basis:600px;
+  display:flex;
+  flex-direction:column;
 }
 
 .ringkasan-belanja{
   margin:3px;
   border:1px solid black;
+  border-radius:15px;
+  height:fit-content;
 
 }
 .ringkasan-belanja h4{
@@ -206,20 +212,22 @@ td{
 }
 .tombol-pilih button{
   text-align:center;
-  color:black;
+  color:white;
   margin:5px;
   padding:10px;
   background-color:#63CE6D;
   font-weight: 600;
   border: 2px solid #63CE6D;
   cursor:pointer;
+  border-radius:5px;
+
   
 }
 .info-barang-belanja{
   display:flex;
   width:100%;
   margin:2px;
-  padding:5px;
+  padding:10px;
   justify-content:space-between;
   align-items:center;
 }
@@ -228,3 +236,74 @@ td{
 }
 
 /* ------------------------Kolom Checkout Catatan------------------------ */
+.catatan{
+  margin:3px;
+  border:1px solid black;
+  border-radius:15px;
+}
+.catatan h4{
+  text-align:center;
+  margin:5px;
+  padding:10px;
+  border-bottom:1px solid black;
+}
+.info-catatan{
+  margin:5px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.info-catatan textarea{
+  width:400px;
+  border-radius:10px;
+}
+
+
+/* ------------------------Footer------------------------ */
+footer{
+  margin-top:15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  background-color: #63CE6D;
+  /* color:black; */
+}
+
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content h4{
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer-content p{
+  margin-bottom: 20px;
+}
+
+.sembakoku-socmed{
+  align-items: flex-end;
+  width: 100px;
+}
+
+.sembakoku-socmed img{
+  width: 45px;
+  height: 40px;
+}
+
+.category-footer{
+  display: flex;
+}
+
+.category2{
+  margin-left: 20px;
+}
