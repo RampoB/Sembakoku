@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="Metode-Pembayaran-style.css">
+</head>
+<body>
+    <!-- Navigasi Bar -->
+    <nav class="nav1">
+        <div class="logo">
+          <h3>Sembakoku</h3>
+        </div>
+  
+        <div class="search-bar">
+          <input type="text" placeholder="Cari bahan">
+          <img src="/Sembakoku/Images/search.png">
+        </div>
+  
+        <div class="daftar-masuk-btn">
+          <input type="button" value="Daftar">
+          <input type="button" value="Masuk">
+        </div>
+    </nav>
+
+    <nav class="nav2">
+  
+        <ul class="list-menu">
+          <li><img src="/Sembakoku/Images/home.png"><a href="Home.html">Home</a></li>
+          <li><img src="/Sembakoku/Images/promo.png"><a href="">Promo</a></li>
+          <li><img src="/Sembakoku/Images/lokasi.png"><a href="../Lokasi-Toko/lokasi.html">Lokasi</a></li>
+          <li><img src="/Sembakoku/Images/keranjang.png"><a href="Keranjang.html">Keranjang</a></li>
+          <li><img src="/Sembakoku//Images/favorit.png"><a href="../Favorit/favorit.html">Favorit</a></li>
+          <li><img src="/Sembakoku/Images/pembayaran.png"><a href="../checkout/checkout-login.html">Pembayaran</a></li>
+        </ul>
+    
+      </nav>
+
+      <div class="container-judul">
+        <h4>Checkout</h4>
+      </div>
+      <!-- Content Metode Pembayaran -->
+      <div class="container container-grid">
+        <!-- Content Metode Pembayar pIlihan Pembayaran -->
+        <div class="Kotak-metode-bayar">
+           <table>
+            <tr>
+                <th>3. Metode Pembayaran</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="dropdown-content">
+                        <select name="Bayar" id="select-pembayaran">
+                            <option value="Transfer">Transfer Bank</option>
+                            <option value="Virtual">Virtual Akun</option>
+                            <option value="Cod">COD</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+           </table>
+        </div>
+
+        <!-- Ringkasan Belanja Dan Total -->
+        <div class="container wadah-sedang">
+            <!-- Ringkasan Belanja -->
+            <div class="ringkasan-belanja">
+              <h4>Ringkasan Belanja</h4>
+              <div class="info-barang-belanja">
+                <img src="/Sembakoku/Images/chili.jpg" alt="">
+                <p>Ayam Size A</p>
+                <p>Rp 250000</p>
+              </div>
+              <div class="tombol-pilih">
+                    <input type="text" placeholder="Masukkan Kode Promo">
+                    <a href="../Metode_Pembayaran/Metode-Pembayaran.html">
+                      <button type="menu" onclick="">Pilih Pembayaran</button>
+                    </a>
+              </div>
+            </div>
+            
+            <!--Catatan Pembelian-->
+            <div class="catatan">
+              <h4>Catatan</h4>
+              <div class="info-catatan">
+                <textarea name="Note" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
