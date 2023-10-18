@@ -165,6 +165,14 @@ ul.list-menu  li img{
     /* margin-left: 45%; */
     margin-bottom: 30px;
   }
+  .container-lingkup{
+    display:grid;
+    grid-template-columns: auto;
+    column-gap:40px;
+    margin:3px;
+    padding:10px;
+    border:1px solid black;
+  }
   
   .container-rekomendasi{
     margin:20px 20px 1px 20px ;
@@ -172,7 +180,12 @@ ul.list-menu  li img{
     display:flex;
     /* border:1px solid black; */
   }
-  
+  .sub-judul{
+    display:flex;
+    justify-content:center;
+    margin:5px;
+    padding:10px;
+  }
   .container-card{
     display:flex;
     margin-top:0;
