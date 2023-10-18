@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------Navigasi Bar------------------------ */
+.nav1{
+  height: 70px;
+  width:100%;
+  background-color:white;
+  display: flex;
+  z-index:999;
+  position:sticky;
+  top:-1px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.search-bar img{
+  width: 20px;
+}
+
+.search-bar input{
+  width: 100%;
+  background: #FFFFFF;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}
+
+.daftar-masuk-btn{
+  display: flex;
+  gap: 20px;
+}
+
+.daftar-masuk-btn input{
+  width: 100px;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+
+.daftar-masuk-btn input:first-child{
+  background-color: #fff;
+  color: #81CD45;
+  font-weight: 600;
+  border: 2px solid #81CD45;
+}
+
+.daftar-masuk-btn input:last-child{
+  background-color: #81CD45;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+}
+
+.nav2{
+  width:100%;
+  height: 70px;
+  padding: 12px 100px;
+  background-color: #98EECC;
+}
+
+.list-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.list-menu  li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.list-menu  li img{
+  width: 25px;
+  height: 25px;
+}
+.list-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* ------------------------Kolom Checkout Alamat Pengiriman------------------------ */
+.container-judul{
+  margin:20px 30px 0 80px;
+  padding:10px;
+  font-size:24px;
+  text-align:center;
+  
+}
+.container-grid{
+    display:flex;
+    /* border:1px solid black; */
+    margin-bottom:10px;
+    padding-bottom:70px;
+}
+
+.wadah-kecil{
+  margin:20px 20px 20px 30px;
+  border:1px solid black;
+  border-radius:0px;
+  flex-basis:900px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+th{
+  text-align:left;
+  padding:10px;
+  margin:10px;
+  background-color:#B0D9B1;
+}
+td{
+  padding:5px 15px;
+}
+.kotak-tambah{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:200px;
+  height:200px;
+  margin:5px;
+  padding:20px;
+  border:1px solid black;
+  border-radius:15px;
+}
+.kotak-tambah img{
+  width:40px;
+  opacity:0.5;
+}
+.box-tulisan-pesan{
+  position:relative;
+  text-align:center;
+  margin:20px;
+  padding:10px;
+  border:1px solid black;
+  border-radius:25px;
+  background-color:#B0D9B1;
+
+}
+.Kurir-harga{
+  display:flex;
+  /* grid-template-columns: 20px 500px 90px; */
+  width:100%;
+  /* border:1px solid black; */
+  flex-direction:row;
+  /* justify-content:center; */
+  /* align-items:center; */
+  margin:10px;
+  padding:20px;
+}
+
+.Kurir-harga p{
+  /* border:1px solid black; */
+  display:flex;
+  width:100%;
+  margin-left:10px;
+  align-self:flex-end;
+}
+
+.pesan-dikirim img{
+  width:20px;
+}
+
+/* ------------------------Kolom Checkout Ringkasan Belanja------------------------ */
+.wadah-sedang{
+  /* border:1px solid black; */
+  margin:10px;
+  flex-basis:600px;
+  display:flex;
+  flex-direction:column;
+}
+
+.ringkasan-belanja{
+  margin:3px;
+  border:1px solid black;
+  border-radius:15px;
+  height:fit-content;
+
+}
+.ringkasan-belanja h4{
+  text-align:center;
+  margin:5px;
+  padding:10px;
+  border-bottom:1px solid black;
+}
+.tombol-pilih{
+  display:flex;
+  justify-content:center;
+  margin:5px;
+  padding:10px;
+}
+.tombol-pilih button{
+  text-align:center;
+  color:white;
+  margin:5px;
+  padding:10px;
+  background-color:#63CE6D;
+  font-weight: 600;
+  border: 2px solid #63CE6D;
+  cursor:pointer;
+  border-radius:5px;
+
+  
+}
+.info-barang-belanja{
+  display:flex;
+  width:100%;
+  margin:2px;
+  padding:10px;
+  justify-content:space-between;
+  align-items:center;
+}
+.info-barang-belanja img{
+  width:80px;
+}
+
+/* ------------------------Kolom Checkout Catatan------------------------ */
+.catatan{
+  margin:3px;
+  border:1px solid black;
+  border-radius:15px;
+}
+.catatan h4{
+  text-align:center;
+  margin:5px;
+  padding:10px;
+  border-bottom:1px solid black;
+}
+.info-catatan{
+  margin:5px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.info-catatan textarea{
+  width:400px;
+  border-radius:10px;
+}
+
+
+/* ------------------------Footer------------------------ */
+footer{
+  margin-top:15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  background-color: #63CE6D;
+  /* color:black; */
+}
+
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content h4{
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer-content p{
+  margin-bottom: 20px;
+}
+
+.sembakoku-socmed{
+  align-items: flex-end;
+  width: 100px;
+}
+
+.sembakoku-socmed img{
+  width: 45px;
+  height: 40px;
+}
+
+.category-footer{
+  display: flex;
+}
+
+.category2{
+  margin-left: 20px;
+}
