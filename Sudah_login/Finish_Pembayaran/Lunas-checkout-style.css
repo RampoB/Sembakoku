@@ -104,27 +104,169 @@ ul.list-menu  li img{
 .container-grid{
     margin:5px;
     padding:10px;
-    width:100%;
-    border:1px solid black;
+    /* width:900px; */
+    /* border:1px solid black; */
     display:flex;
     justify-content:center;
 }
 .container-pembayaran{
     margin:3px;
-    padding:10px;
+    /* padding:10px; */
     width:600px;
+    /* border-radius:20px; */
     display:flex;
     flex-wrap:wrap;
-    /* justify-content:center; */
+    justify-content:center;
     border:1px solid black;
 }
+
 .container-pembayaran p{
+    margin:5px;
+    padding:10PX;
     text-align:center;
 }
 .sub-judul{
     display:flex;
     width:100%;
-    padding:5px;
+    /* margin:5px; */
+    padding:10px;
     justify-content:center;
-    border:1px solid black;
+    border-bottom:1px solid black;
+    /* border-radius:20px; */
+    background-color:#B0D9B1;
+
 }
+.sub-judul h5{
+    font-size:17px;
+}
+
+.kotak-tanggal{
+    display:flex;
+    justify-content:center;
+    margin:5px;
+    padding:5px;
+    /* border:1px solid black; */
+    width:100%;
+}
+.kotak-tanggal p{
+    margin:5px;
+    border:1px solid black;
+    width:300px;
+    padding:5px;
+    background-color:#B0D9B1;
+}
+.info-order{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    /* align-items:center; */
+    justify-content:space-evenly;
+}
+table{
+    /* border:1px solid black; */
+    border-collapse:collapse;
+}
+.total-info{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:5px;
+    padding:10px;
+}
+
+/* ------------------------Tombol Kembali------------------------ */
+.tombol-belanja button{
+    text-align:center;
+    color:white;
+    margin:5px;
+    padding:10px;
+    background-color:#63CE6D;
+    font-weight: 600;
+    border: 2px solid #63CE6D;
+    cursor:pointer;
+    border-radius:5px;
+}
+.tombol-belanja{
+    display:flex;
+    justify-content:center;
+}
+
+/* ------------------------Tombol Bantuan------------------------ */
+.bantuan-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin:10px;
+    padding:10px;
+  }
+  
+  .bantuan-btn button{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: #14A2B8;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  .bantuan-btn a{
+    text-decoration:none;
+  }
+  .bantuan-btn button img{
+    width: 25px;
+    height: 25px;
+  }
+
+/* ------------------------Footer------------------------ */
+footer{
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background-color: #63CE6D;
+    /* color:black; */
+  }
+  
+  .footer-section{
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+  }
+  
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-content h4{
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .footer-content p{
+    margin-bottom: 20px;
+  }
+  
+  .sembakoku-socmed{
+    align-items: flex-end;
+    width: 100px;
+  }
+  
+  .sembakoku-socmed img{
+    width: 45px;
+    height: 40px;
+  }
+  
+  .category-footer{
+    display: flex;
+  }
+  
+  .category2{
+    margin-left: 20px;
+  }
+  
