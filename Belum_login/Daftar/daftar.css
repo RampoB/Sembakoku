@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav1 {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  background-color: #63ce6d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.daftar-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.daftar-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.daftar-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.daftar-input input {
+  border: 1px solid black;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+#kota-form {
+  margin-bottom: 20px;
+}
+
+.daftar-input button {
+  height: 40px;
+  background-color: #63ce6d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
