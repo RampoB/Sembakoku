@@ -116,6 +116,7 @@ ul.list-menu  li img{
   margin:20px 20px 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius:15px;
+  height:fit-content;
 }
 .kolom1{
   grid-column:1/2;
@@ -168,6 +169,57 @@ aside th{
  justify-content:space-between;
  margin:3px;
  padding:10px;
+}
+.info-total{
+  display:flex;
+  justify-content:space-evenly;
+  /* border:1px solid black; */
+  margin:3px;
+  padding:10px;
+  /* width:180px; */
+}
+
+.tombol-pilih{
+  display:flex;
+  justify-content:space-evenly;
+  margin:5px;
+  padding:10px;
+}
+.tombol-pilih button{
+  text-align:center;
+  color:white;
+  margin:5px;
+  padding:10px;
+  background-color:#63CE6D;
+  font-weight: 600;
+  border: 2px solid #63CE6D;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.tombol-pilih input{
+  margin:5px;
+  padding:10px;
+  width:200px;
+  /* height:20px; */
+  text-align:center;
+  border-radius:5px;
+}
+
+.tombol-belanja button{
+  text-align:center;
+  color:white;
+  margin:5px;
+  padding:10px;
+  background-color:#63CE6D;
+  font-weight: 600;
+  border: 2px solid #63CE6D;
+  cursor:pointer;
+  border-radius:5px;
+}
+.tombol-belanja{
+  display:flex;
+  justify-content:center;
 }
 /* ----------------------Rekomendasi Produk--------------------- */
 .container-rekomendasi{
