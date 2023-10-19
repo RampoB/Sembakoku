@@ -41,36 +41,31 @@
   margin-left: 10px;
 }
 
-.daftar-masuk-btn{
-  display: flex;
-  gap: 20px;
-}
-
-.daftar-masuk-btn input{
-  width: 100px;
-  border-radius: 5px;
-  padding: 3px 5px;
-}
-
-
-.daftar-masuk-btn input:first-child{
-  background-color: #fff;
-  color: #81CD45;
-  font-weight: 600;
-  border: 2px solid #81CD45;
-}
-
-.daftar-masuk-btn input:last-child{
-  background-color: #81CD45;
-  color: #FFFFFF;
-  font-weight: 600;
-  border: none;
-}
+.logout-profile-container{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logout-profile-container button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+  }
+  
+  .logout-profile-container img{
+    width: 35px;
+    height: 25px;
+  }
 
 .nav2{
   height: 70px;
   padding: 12px 100px;
-  background-color: #98EECC;
+  background-color: #63CE6D;
   
 }
 
@@ -170,38 +165,40 @@ ul.list-menu  li img{
     /* margin-left: 45%; */
     margin-bottom: 30px;
   }
-  
-  .product-category-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* grid-template-rows: 390px 390px 390px; */
-    margin-left:2px;
-    margin-bottom:20px;
-    justify-content:space-between;
-    /* margin-right:100px; */
-    row-gap: 1px;
+  .container-lingkup{
+    display:grid;
+    grid-template-columns: auto;
+    column-gap:40px;
+    margin:5px;
+    padding:10px;
+    margin-bottom:10px;
+    /* border:1px solid black; */
   }
   
-  .category-container{
-    width: 350px;
-    height: 390px;
-    padding: 20px 20px;
-    border: 1px solid black;
-    border-radius: 20px;
+  .container-rekomendasi{
+    margin:20px 20px 1px 20px ;
+    padding:10px;
+    display:flex;
+    /* border:1px solid black; */
   }
-  
-  .category-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  .sub-judul{
+    display:flex;
+    justify-content:center;
+    margin:5px;
+    padding:10px;
   }
-  
-  .product-card-container{
-    display: flex;
-    flex-basis:21%;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  .container-card{
+    display:flex;
+    margin-top:0;
+    margin-bottom:10px;
+    margin-left:20px;
+    margin-right:auto;
+    grid-template-columns:auto;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:26px;
+    width:100%;
   }
   
   .product-card{
@@ -214,6 +211,7 @@ ul.list-menu  li img{
   
   .product-card img{
     width: 130px;
+    height: 95px;
     border-radius: 8px;
   }
   
@@ -236,19 +234,45 @@ ul.list-menu  li img{
   
   .rating p{
     font-size: 12px;
-  }
+  } 
   
-  .lihat-semua{
-    display: flex;
-    align-items: center;
-    margin-left: 33%;
-  }
-  
-  .page-title .Tampilkan{
-    text-decoration :none;
+  a{
+    text-decoration:none;
     color:black;
   }
   
+
+  .bantuan-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin:10px;
+    padding:10px;
+  }
+  
+  .bantuan-btn button{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: #14A2B8;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  .bantuan-btn a{
+    text-decoration:none;
+  }
+  .bantuan-btn button img{
+    width: 25px;
+    height: 25px;
+  }
+
+
   /*--------------------------------------FOOTER--------------------------------------*/
   
   
