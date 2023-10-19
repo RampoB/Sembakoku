@@ -53,10 +53,12 @@
 }
 
 .login-input button{
+  align-text:center;
   height: 40px;
   background-color: #63CE6D;
   color: #FFFFFF;
   border: none;
+  width:220px;
   border-radius: 5px;
   margin-bottom: 20px;
   cursor: pointer;
