@@ -169,9 +169,10 @@ ul.list-menu  li img{
     display:grid;
     grid-template-columns: auto;
     column-gap:40px;
-    margin:3px;
+    margin:5px;
     padding:10px;
-    border:1px solid black;
+    margin-bottom:10px;
+    /* border:1px solid black; */
   }
   
   .container-rekomendasi{
@@ -233,8 +234,45 @@ ul.list-menu  li img{
   
   .rating p{
     font-size: 12px;
-  }  
+  } 
   
+  a{
+    text-decoration:none;
+    color:black;
+  }
+  
+
+  .bantuan-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin:10px;
+    padding:10px;
+  }
+  
+  .bantuan-btn button{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: #14A2B8;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  .bantuan-btn a{
+    text-decoration:none;
+  }
+  .bantuan-btn button img{
+    width: 25px;
+    height: 25px;
+  }
+
+
   /*--------------------------------------FOOTER--------------------------------------*/
   
   
